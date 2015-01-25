@@ -1,0 +1,30 @@
+/*This is our main file for scc/sass*/
+
+body{
+    background-color: $background;
+    font-family: sans-serif;
+
+}
+
+.primary-btn{
+    @include button($primary, #fff, $primary-dark);
+}
+
+.secondary-btn{
+    @include button($secondary, #000, $secondary-dark);
+}
+
+/*This is nesting*/
+.border{
+    border: 1px solid $secondary-dark;
+    p{
+        background: green;
+    
+    }
+
+}
+
+ul{
+    @extend .border;
+}
+
