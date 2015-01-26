@@ -9,47 +9,71 @@ unprefixed .scss file */
 /*This file contains all our variables*/
 /* are placeholders for storing information
 that you want to reuse throughout your styles.
-You can ;store thins like colours font-stacks,
+You can store things like colours font-stacks,
 or any css value you think you might want to reuse.
 SCSS uses the '$' symbol to declare variables */
 /*This file contains all our mixins*/
 /*This is our main file for scc/sass*/
-/* line 3, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/components/main */
+/* line 2, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/components/main */
+-moz-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-o-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1; }
+
+@viewport {
+  width: device-width;
+  scale: 1; }
+
+/* line 8, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/components/main */
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+/* line 16, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/components/main */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 20, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/components/main */
 body {
-  background-color: #f5f5f5;
-  font-family: sans-serif; }
+  margin: 0;
+  padding: 0;
+  background: url("../images/background.jpg");
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #F59A0B;
+  text-align: center; }
 
-/* line 9, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/components/main */
-.primary-btn {
-  background-color: #3498bb;
-  border-radius: 3px;
-  padding: 0.5em 1em;
-  margin: 1em;
+/* line 30, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/components/main */
+h1 {
+  font-size: 10em; }
+
+/* line 35, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/components/main */
+.btn {
+  font-size: 5em;
+  padding: 0.7em 0.9em;
   display: inline-block;
+  background-color: #FBFAF8;
+  border-radius: 50px;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.5);
+  color: #000000;
   text-decoration: none;
-  color: #fff; }
-  /* line 11, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/mixins */
-  .primary-btn:hover {
-    background-color: #2980b9; }
+  font-family: fontello; }
+  /* line 13, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/mixins */
+  .btn:hover {
+    background-color: #02D058; }
 
-/* line 13, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/components/main */
-.secondary-btn {
-  background-color: #aaa;
-  border-radius: 3px;
-  padding: 0.5em 1em;
-  margin: 1em;
-  display: inline-block;
-  text-decoration: none;
-  color: #000; }
-  /* line 11, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/mixins */
-  .secondary-btn:hover {
-    background-color: #666; }
-
-/*This is nesting*/
-/* line 18, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/components/main */
-.border, ul {
-  border: 1px solid #666; }
-  /* line 20, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/components/main */
-  .border p, ul p {
-    background: green; }
-
+/* line 40, /Users/alexandrachama/Documents/School/Graphic Design 6/Web Dev/exercise-2-scss/scss/components/main */
+.btn:hover {
+  background-color: #02D058; }
